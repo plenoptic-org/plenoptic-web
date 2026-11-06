@@ -7,7 +7,7 @@ title: plenoptic
 <div class="badges" markdown="1">
 [![PyPI Version](https://img.shields.io/pypi/v/plenoptic.svg)](https://pypi.org/project/plenoptic/)
 [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plenoptic/badges/version.svg)](https://anaconda.org/conda-forge/plenoptic)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10151131.svg)](https://doi.org/10.5281/zenodo.10151131)
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.10151131-blue)](https://doi.org/10.5281/zenodo.10151131)
 [![Github organization](https://img.shields.io/badge/GitHub-Organization-blue?logo=github)](https://github.com/plenoptic-org)
 ![PyPI - License](https://img.shields.io/pypi/l/plenoptic)
 </div>
