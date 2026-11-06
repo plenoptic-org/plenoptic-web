@@ -1,0 +1,26 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Check urls
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  schedule:
+  - cron: 0 0 * * 0     # weekly
+
+
+permissions: {}
+
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: urlstechie/urlchecker-action@b643b43e2ac605e1475331c7b67247d242b7dce4 # 0.0.34
+        with:
+          file_types: .md
+          timeout: 5
+          retry_count: 3
