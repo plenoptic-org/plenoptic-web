@@ -29,17 +29,17 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+      - uses: urlstechie/urlchecker-action@b643b43e2ac605e1475331c7b67247d242b7dce4 # 0.0.34
+        with:
+          file_types: .md
+          timeout: 5
+          retry_count: 3
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d #v6.0.0
       - uses: ruby/setup-ruby@e1bd6146574da5e0795075b5319b300edb30c5b0 # v1.333
         with:
           ruby-version: '4.0'
           bundler-cache: true
-      - uses: urlstechie/urlchecker-action@b643b43e2ac605e1475331c7b67247d242b7dce4 # 0.0.34
-        with:
-          file_types: .md
-          timeout: 5
-          retry_count: 3
       - name: Build with Jekyll
         run: bundle exec jekyll build --verbose -d ./_site
       - name: Upload artifact
