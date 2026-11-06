@@ -1,6 +1,6 @@
 ---
 icon: mdi:package-down
-external_url: https://docs.plenoptic.org/docs/branch/main/install.html
+external_url: https://docs.plenoptic.org/docs/branch/main/getting_started/install.html
 name: Installation instructions
 ---
 {% tabs install %}
